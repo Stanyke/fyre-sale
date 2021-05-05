@@ -1,38 +1,176 @@
-.App {
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.app_logo{
+  max-width: 100px;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+}
+
+.mainContent {
+  padding: 14px 18px;
+  background: #ffffff;
+  margin: 20px auto 0px;
+  max-width: 350px;
+  border-radius: 4px;
+  border: 1px solid #DDDDDD;
+  color: #111111;
+  height: 520px;
+  font-family: Arial, sans-serif;
+}
+
+.mainContent h1{
+  color: #111111;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.2;
+  text-rendering: optimizeLegibility;
+  padding-bottom: 4px;
+  position: relative;
+  bottom: 20px;
+  margin-bottom: -10px;
+}
+
+.formBox label{
+  display: block;
+  padding-left: 2px;
+  padding-bottom: 2px;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.formBox input{
+  width: 100%;
+  background-color: #fff;
+  height: 31px;
+  padding: 3px 7px;
+  border: 1px solid #a6a6a6;
+  border-top-color: #949494;
+  border-radius: 3px;
+  box-shadow: none;
+  outline: 0;
+  margin: 0px 0px 15px 0px;
+}
+
+.formBox input:focus {
+  outline: none !important;
+  border: 1px solid #1880BA;
+}
+
+.iQuote{
+  position: relative;
+  bottom: 13px;
+}
+
+.imark{
+  color: #1880BA;
+  font-size: large;
+  position: relative;
+  top: 3px;
+  margin: 0px 7px;
+}
+
+.itext{
+  font-size: 12px;
+  line-height: 15px;
+  color: #2b2b2b;
+}
+
+.submitBtn{
+  width: 100%;
+  height: 29px;
+  background-color: #1880BA;
+  border: 0;
+  outline: 0;
+  color: #ffffff;
+  border-radius: 5px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.submitBtn:hover{
+  background-color: #136B9B;
+}
+
+a:link, a:active, a:visited{
+  color: #1880BA;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+.mainContent .info{
+  padding: 10px 0px 0px;
+}
+
+.optionalInfo{
+  height: 44px;
+  font-size: 13px;
+  line-height: 19px;
+  color: #2b2b2b;
+  margin: 30px 0px 0px;
+  border-top: 1px solid #949494;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+
+.optionalInfo .content{
+  padding-top: 20px;
+}
+
+.signInBtn{
+  margin-left: 5px;
+}
+
+.signInBtn:hover + .signInArrow{
+  color: tomato;
+}
+
+.signInArrow{
+  font-size: 7px;
+  position: relative;
+  top: -2px;
+  padding-left: 3px;
+  color: #1880BA;
+}
+
+.footer{
+  width: 100%;
+  margin-top: 30px;
+  padding: 20px 5px;
+  height: 110px;
   text-align: center;
+  background-color: #FEFEFE;
+  border-top: 1px solid #949494;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.footer .content{
+  max-width: 250px;
+  margin: auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
 }
 
-.App-link {
-  color: #61dafb;
+.footer .content a.itext{
+  font-size: 11px;
+  color: #136B9B;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.smallerContent{
+  margin-top: 14px;
+  font-size: 11px!important;
+  line-height: 1.465!important;
+  color: #555!important;
 }
